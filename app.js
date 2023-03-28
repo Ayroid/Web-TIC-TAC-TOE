@@ -1,4 +1,4 @@
-var player1, player2, turn, line, winner;
+var player1, player2, turn, line, winner=0, count=0;
 
 function setValue(element) {
   if (
@@ -11,19 +11,24 @@ function setValue(element) {
     } else {
       document.getElementById(element).innerText = player2;
     }
+    count+=1;
     turn = (turn + 1) % 2;
     turnValue();
     winnerCheck();
+    if(count === 9 && winner===0){
+      winner=3
+      winnerDeclare();
+    }
   }
 }
 
 function turnValue() {
   if (turn === 1) {
-    document.getElementById("play1").style.background = "lime";
+    document.getElementById("play1").style.background = "chartreuse";
     document.getElementById("play2").style.background = "bisque";
   } else {
     document.getElementById("play1").style.background = "bisque";
-    document.getElementById("play2").style.background = "lime";
+    document.getElementById("play2").style.background = "chartreuse";
   }
 }
 
@@ -128,8 +133,11 @@ function winnerDeclare(){
     if(winner === 1){
         document.getElementById('winner1').style.display='flex'
     }
-    else{
+    else if(winner === 2){
         document.getElementById('winner2').style.display='flex'
+    }
+    else if(winner === 3){
+      document.getElementById('draw').style.display='flex'
     }
 
     document.getElementById('playAgain').style.display='flex'
