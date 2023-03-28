@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+    <div class="div_center">
+        <div class="matrix_table" id = "board">
+            <div class="matrix_ele" id="ele_1" onclick="setValue('ele_1')"></div>
+            <div class="matrix_ele" id="ele_2" onclick="setValue('ele_2')"></div>
+            <div class="matrix_ele" id="ele_3" onclick="setValue('ele_3')"></div>
+            <div class="matrix_ele" id="ele_4" onclick="setValue('ele_4')"></div>
+            <div class="matrix_ele" id="ele_5" onclick="setValue('ele_5')"></div>
+            <div class="matrix_ele" id="ele_6" onclick="setValue('ele_6')"></div>
+            <div class="matrix_ele" id="ele_7" onclick="setValue('ele_7')"></div>
+            <div class="matrix_ele" id="ele_8" onclick="setValue('ele_8')"></div>
+            <div class="matrix_ele" id="ele_9" onclick="setValue('ele_9')"></div>
+        </div>
+        
+    </div>
+    <div class="start" onclick="startGame();">
+        <p id="start">START</p>
+    </div>
+    <div class="turn start">
+        <div class="player start" id="p1"><p id="play1">P1 : X</p></div>
+        <div class="player start" id="p2"><p id="play2">P2 : O</p></div>
+    </div>
+
+    <div class="start">
+        <p class = "winner" id="winner1">PLAYER1<br>WON!</p>
+        <p class = "winner" id="winner2">PLAYER2<br>WON!</p>
+    </div>
+
+    <div class="start">
+        <p class = "winner" id="playAgain" onclick="replay()">PLAY AGAIN?</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

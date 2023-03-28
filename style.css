@@ -1,0 +1,73 @@
+.div_center{
+    padding: 2rem 0 1.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix_table{
+    display: grid;
+    grid-template-rows: 10rem 10rem 10rem;
+    grid-template-columns: 10rem 10rem 10rem;
+}
+
+.matrix_ele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    background-color: bisque;
+    font-size: 5rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:chocolate;
+}
+
+.matrix_ele:hover{
+    cursor: pointer;
+}
+
+.start{
+    padding: none;
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start p{
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cornsilk;
+    padding: 1rem;
+    border-radius: 7%;
+}
+
+.start p:hover{
+    cursor: pointer;
+}
+
+.player{
+    padding: 0 1rem;
+    display: none;
+}
+
+.winner{
+    display: none;
+    height: 20vh;
+    width: 20%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#playAgain{
+    display: none;
+    height: 10vh;
+    width: 10%;
+    margin-top: 1rem;
+    background-color: antiquewhite;
+}
