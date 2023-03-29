@@ -139,6 +139,10 @@ function winnerDeclare() {
   } else if (winner === 3) {
     document.getElementById("draw").style.display = "flex";
   }
+
+  document.getElementById("play1").style.background = "bisque";
+  document.getElementById("play2").style.background = "bisque";
+
 }
 
 function replay() {
