@@ -66,7 +66,7 @@
 }
 
 #playAgain {
-    display: flex;
+    display: hidden;
     height: 5vh;
     width: fit-content+5px;
     background-color: antiquewhite;

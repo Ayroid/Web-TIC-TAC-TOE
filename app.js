@@ -38,8 +38,8 @@ function turnValue() {
 }
 
 function startGame() {
-  let start = document.getElementById("start");
-  start.style.display = "none";
+  document.getElementById("start").style.display="none";
+  document.getElementById("playAgain").style.display = "flex";
 
   let p1 = document.getElementById("p1");
   let p2 = document.getElementById("p2");
