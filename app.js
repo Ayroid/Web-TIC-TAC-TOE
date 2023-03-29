@@ -1,4 +1,9 @@
-var player1, player2, turn, line, winner=0, count=0;
+var player1,
+  player2,
+  turn,
+  line,
+  winner = 0,
+  count = 0;
 
 function setValue(element) {
   if (
@@ -11,12 +16,12 @@ function setValue(element) {
     } else {
       document.getElementById(element).innerText = player2;
     }
-    count+=1;
     turn = (turn + 1) % 2;
     turnValue();
+    count += 1;
     winnerCheck();
-    if(count === 9 && winner===0){
-      winner=3
+    if (count === 9 && winner === 0) {
+      winner = 3;
       winnerDeclare();
     }
   }
@@ -106,11 +111,11 @@ function winnerCheck() {
     }
     if (line === "XXX") {
       if (player1 === "X") {
-        winner = "PLAYER 1";
+        winner = 1;
       } else {
-        winner = "PLAYER 2";
+        winner = 2;
       }
-      console.log(line)
+      console.log(line);
       winnerDeclare();
     } else if (line === "OOO") {
       if (player1 === "O") {
@@ -118,31 +123,24 @@ function winnerCheck() {
       } else {
         winner = 2;
       }
-      console.log(line)
+      console.log(line);
       winnerDeclare();
     }
   }
 }
 
-function winnerDeclare(){
-    document.getElementById('board').style.display='none'
-    document.getElementById('start').style.display='none'
-    document.getElementById('p1').style.display='none'
-    document.getElementById('p2').style.display='none'
-    
-    if(winner === 1){
-        document.getElementById('winner1').style.display='flex'
-    }
-    else if(winner === 2){
-        document.getElementById('winner2').style.display='flex'
-    }
-    else if(winner === 3){
-      document.getElementById('draw').style.display='flex'
-    }
+function winnerDeclare() {
+  document.getElementById("board").style.display = "none";
 
-    document.getElementById('playAgain').style.display='flex'
+  if (winner === 1) {
+    document.getElementById("winner1").style.display = "flex";
+  } else if (winner === 2) {
+    document.getElementById("winner2").style.display = "flex";
+  } else if (winner === 3) {
+    document.getElementById("draw").style.display = "flex";
+  }
 }
 
-function replay(){
-    window.location.reload();
+function replay() {
+  window.location.reload();
 }

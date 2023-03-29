@@ -1,4 +1,4 @@
-.div_center{
+.div_center {
     padding: 2rem 0 1.5rem 0;
     width: 100%;
     display: flex;
@@ -6,13 +6,13 @@
     align-items: center;
 }
 
-.matrix_table{
+.matrix_table {
     display: grid;
     grid-template-rows: 10rem 10rem 10rem;
     grid-template-columns: 10rem 10rem 10rem;
 }
 
-.matrix_ele{
+.matrix_ele {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,14 @@
     font-size: 5rem;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:chocolate;
+    color: chocolate;
 }
 
-.matrix_ele:hover{
+.matrix_ele:hover {
     cursor: pointer;
 }
 
-.start{
+.start {
     padding: none;
     margin: none;
     display: flex;
@@ -36,26 +36,27 @@
     justify-content: center;
 }
 
-.start p{
+.start p {
     margin: auto;
     font-size: 2rem;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: cornsilk;
     padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 7%;
 }
 
-.start p:hover{
+.start p:hover {
     cursor: pointer;
 }
 
-.player{
+.player {
     padding: 0 1rem;
     display: none;
 }
 
-.winner{
+.winner {
     display: none;
     height: 20vh;
     width: 20%;
@@ -64,10 +65,8 @@
     align-items: center;
 }
 
-#playAgain{
-    display: none;
-    height: 10vh;
-    width: 10%;
-    margin-top: 1rem;
+#playAgain {
+    display: flex;
+    height: 5vh;
     background-color: antiquewhite;
 }
