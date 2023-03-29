@@ -68,5 +68,6 @@
 #playAgain {
     display: flex;
     height: 5vh;
+    width: fit-content+5px;
     background-color: antiquewhite;
 }
