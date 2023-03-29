@@ -8,8 +8,8 @@
 
 .matrix_table {
     display: grid;
-    grid-template-rows: 10rem 10rem 10rem;
-    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 8rem 8rem 8rem;
+    grid-template-columns: 8rem 8rem 8rem;
 }
 
 .matrix_ele {
@@ -59,7 +59,7 @@
 .winner {
     display: none;
     height: 20vh;
-    width: 20%;
+    width: fit-content;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -68,6 +68,13 @@
 #playAgain {
     display: hidden;
     height: 5vh;
-    width: fit-content+5px;
+    width: fit-content;
     background-color: antiquewhite;
+}
+
+@media screen and (max-width:400px) {
+    .matrix_table {
+        grid-template-rows: 8rem 8rem 8rem;
+        grid-template-columns: 8rem 8rem 8rem;
+    }
 }
