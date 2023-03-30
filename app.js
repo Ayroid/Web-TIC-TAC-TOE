@@ -4,7 +4,7 @@ var player1,
   line,
   winner = 0,
   count = 0;
-
+  
 function setValue(element) {
   if (
     document.getElementById(element).innerText === "" &&
@@ -147,4 +147,5 @@ function winnerDeclare() {
 
 function replay() {
   window.location.reload();
+ // Do not show the start button when restarting the game
 }
